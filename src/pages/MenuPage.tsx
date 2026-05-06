@@ -82,9 +82,7 @@ export default function MenuPage() {
           >
             {/* Rotating Dashed Ring */}
             <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-              className="absolute w-[240px] h-[240px] rounded-full border-2 border-dashed opacity-20"
+              className="absolute w-[210px] h-[210px] rounded-4xl border-3 opacity-40"
               style={{ borderColor: "var(--color-primary-500)" }}
             />
 
@@ -99,23 +97,11 @@ export default function MenuPage() {
               ].map((pos, i) => (
                 <div key={i} className={`absolute w-10 h-10 ${pos}`} style={{ borderColor: "var(--color-primary-500)" }} />
               ))}
-              <img src="/logo.png" className="w-[250px] h-[250px] object-contain drop-shadow-2xl" alt="Logo" />
+              <img src="/logo.png" className="w-[220px] h-[220px] object-cover drop-shadow-2xl" alt="Logo" />
             </div>
           </motion.div>
 
-          {/* Title Area */}
-          <div className="mt-12 flex items-center justify-center gap-6 w-full max-w-sm">
-            <div className="flex-1 h-px bg-primary opacity-20" style={{ backgroundColor: "var(--color-primary-500)" }} />
-            <motion.h1
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="text-lg md:text-xl text-gray-900 font-black tracking-[0.2em] uppercase whitespace-nowrap"
-            >
-              {t("menu.title")}
-            </motion.h1>
-            <div className="flex-1 h-px bg-primary opacity-20" style={{ backgroundColor: "var(--color-primary-500)" }} />
-          </div>
+
         </section>
         {/* ✅ Menu */}
         <div className="flex-1 w-full max-w-6xl mx-auto px-0 md:px-6 pb-24">
