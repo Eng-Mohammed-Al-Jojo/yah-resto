@@ -1,10 +1,10 @@
+
 import React, {
   useCallback,
 } from "react";
 import { type Item } from "./Menu";
 import { FaFire } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import { FiShoppingCart } from "react-icons/fi";
 
 interface Props {
@@ -16,10 +16,7 @@ interface Props {
 
 const ItemRow = React.memo(
   ({ item, orderSystem, onClick }: Props) => {
-    const { t } = useTranslation();
-
     const prices = String(item.price).split(",");
-    const basePrice = Number(prices[0]);
     const unavailable = item.visible === false;
     const itemName = item.nameAr || item.name || "";
     const description = item.ingredientsAr || item.ingredients || "";
@@ -49,20 +46,22 @@ const ItemRow = React.memo(
         onClick={handleOrderClick}
       >
         {/* IMAGE (RIGHT SIDE, ABSOLUTE, OVERFLOW) */}
-        <div className="absolute right-10 translate-x-1/2 w-28 h-28 z-10">
-          <img
-            src={item.image ? `/images/${item.image}` : "/logo.png"}
-            alt={itemName}
-            loading="lazy"
-            className="w-full h-full rounded-full object-cover shadow-md border-2 border-primary-500 transition-transform duration-500 group-hover:scale-105"
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = "/logo.png";
-            }}
-          />
+        <div className="absolute right-10 translate-x-1/2 w-28 h-28 z-10 flex items-center justify-center">
+          <div className="relative w-full h-full">
+            <img
+              src={item.image ? `/images/${item.image}` : "/logo.png"}
+              alt={itemName}
+              loading="lazy"
+              className="w-full h-full rounded-full object-cover shadow-md border-2 border-primary-500 transition-transform duration-500 group-hover:scale-105"
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = "/logo.png";
+              }}
+            />
+          </div>
 
           {/* FEATURED BADGE */}
           {(item.star || (item as any).isFeatured) && !unavailable && (
-            <div className="absolute -top-1 -right-1 bg-[#B7303E] text-white p-1.5 rounded-full shadow-lg border-2 border-white animate-bounce">
+            <div className="absolute -top-1 -right-1 bg-primary text-white p-1.5 rounded-full shadow-lg border-2 border-white animate-bounce">
               <FaFire size={10} />
             </div>
           )}
@@ -79,25 +78,28 @@ const ItemRow = React.memo(
         </div>
 
         {/* LEFT SECTION (PRICE + BUTTON) */}
-        <div className="flex flex-col items-end gap-2.5 shrink-0 min-w-[90px] pl-2">
-          <div className="text-[#355152] font-black text-xl flex items-center gap-0.5">
-            <span className="text-sm font-bold opacity-60">₪</span>
-            {basePrice}
+        <div className="flex flex-col items-end gap-2.5 shrink-0 min-w-[90px] pl-4">
+          <div className="flex items-center gap-2">
+            {prices.map((p, index) => (
+              <React.Fragment key={index}>
+                <div className="text-[#355152] font-black text-lg md:text-xl flex items-center gap-0.5">
+                  <span className="text-[10px] md:text-xs font-bold opacity-60">₪</span>
+                  {p.trim()}
+                </div>
+                {index < prices.length - 1 && (
+                  <div className="h-4 w-px bg-gray-300" />
+                )}
+              </React.Fragment>
+            ))}
           </div>
 
           {canOrder && (
             <button
               onClick={handleOrderClick}
-              className="bg-[#B7303E] hover:bg-[#a02a36] text-white px-4 py-2.5 rounded-full text-xs font-black shadow-lg shadow-[#B7303E]/20 transition-all active:scale-95 uppercase tracking-wider whitespace-nowrap"
+              className="bg-primary hover:bg-primary-600 text-white px-3 py-2 rounded-full text-xs font-black shadow-lg shadow-primary/20 transition-all active:scale-95 uppercase tracking-wider whitespace-nowrap"
             >
               <FiShoppingCart size={14} />
             </button>
-          )}
-
-          {unavailable && (
-            <span className="bg-gray-100 text-gray-400 px-3 py-1 rounded-full text-[10px] font-bold">
-              {t("common.unavailable")}
-            </span>
           )}
         </div>
       </motion.div>
@@ -105,4 +107,4 @@ const ItemRow = React.memo(
   }
 );
 
-export default ItemRow;
+export default ItemRow
