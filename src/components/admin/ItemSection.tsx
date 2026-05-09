@@ -72,7 +72,7 @@ const SortableItem: React.FC<{
         }`}
     >
       {/* ===== Top Row (image + info) ===== */}
-      <div className="flex gap-4 w-full items-center">
+      <div className="flex gap-4 sm:gap-8 w-full items-center">
         {/* Drag Handle */}
         <div
           {...listeners}
@@ -95,7 +95,7 @@ const SortableItem: React.FC<{
 
               <button
                 onClick={() => removeImage(item.id)}
-                className="absolute -top-1.5 -right-1.5 w-6 h-6 sm:w-7 sm:h-7 bg-secondary text-white rounded-full flex items-center justify-center shadow-lg scale-0 group-hover/img:scale-100 transition-transform hover:bg-secondary-600"
+                className="absolute -top-1 -right-1 w-6 h-6 sm:w-7 sm:h-7 bg-secondary text-white rounded-full flex items-center justify-center shadow-lg scale-0 group-hover/img:scale-100 transition-transform hover:bg-secondary-600"
               >
                 <FiMinus size={14} />
               </button>
@@ -497,7 +497,7 @@ const ItemSection: React.FC<Props> = ({ categories, subcategories, items, setPop
       </div>
 
       {/* Items by Category */}
-      <div className="space-y-8">
+      <div className="space-y-3">
         {Object.entries(categories)
           .sort(([, a], [, b]) => (a.order ?? 0) - (b.order ?? 0))
           .map(([catId, cat]) => {
@@ -524,7 +524,7 @@ const ItemSection: React.FC<Props> = ({ categories, subcategories, items, setPop
               <div key={catId} className="bg-white border border-gray-50 rounded-[2.5rem] overflow-hidden shadow-soft hover:shadow-premium transition-all">
                 <button
                   onClick={() => toggleSection(catId)}
-                  className="w-full p-8 flex items-center justify-between group bg-gray-50/50 hover:bg-gray-50 transition-colors"
+                  className="w-full p-6 flex items-center justify-between group bg-gray-50/50 hover:bg-gray-50 transition-colors"
                 >
 
                   <div className="flex items-center gap-6">
@@ -546,7 +546,7 @@ const ItemSection: React.FC<Props> = ({ categories, subcategories, items, setPop
                       exit={{ height: 0, opacity: 0 }}
                       className="overflow-hidden"
                     >
-                      <div className="p-8 pt-4">
+                      <div className="p-2 pt-2">
                         <DndContext
                           sensors={sensors}
                           collisionDetection={closestCenter}
@@ -556,7 +556,7 @@ const ItemSection: React.FC<Props> = ({ categories, subcategories, items, setPop
                             items={catItems.map((i) => i.id)}
                             strategy={verticalListSortingStrategy}
                           >
-                            <div className="flex flex-col gap-1">
+                            <div className="flex flex-col gap-2">
                               {catItems.map((item, idx) => (
                                 <SortableItem
                                   key={item.id}
