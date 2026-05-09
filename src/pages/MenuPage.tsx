@@ -38,7 +38,7 @@ export default function MenuPage() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-(--menu-bg) text-(--menu-text) menu-wrapper overflow-x-hidden">
+    <div className="min-h-screen flex flex-col bg-(--bg-main) text-(--menu-text) menu-wrapper overflow-x-hidden">
 
       {/* Loading */}
       <LoadingScreen visible={isLoading} />

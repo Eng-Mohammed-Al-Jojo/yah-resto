@@ -229,7 +229,7 @@ export default function Menu({ onLoadingChange, onFeaturedCheck, onFeaturedItems
 
   /* ================= Phase: Ready ================= */
   return (
-    <div className="menu-wrapper bg-white min-h-screen">
+    <div className="menu-wrapper bg-(--bg-main) min-h-screen">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

@@ -39,7 +39,7 @@ const ItemRow = React.memo(
         viewport={{ once: true, margin: "50px" }}
         className={`
           relative flex items-center justify-between w-full rounded-3xl border border-primary-200
-          h-[100px] pr-27 pl-2 bg-white mb-8 mr-2
+          h-[100px] pr-27 pl-2 bg-(--bg-card)/50 mb-8 mr-2
           transition-all duration-300 group
           ${unavailable ? "opacity-60 grayscale mt-10 mb-10" : "hover:bg-gray-50/50 cursor-pointer"}
         `}

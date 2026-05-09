@@ -379,7 +379,7 @@ const ItemSection: React.FC<Props> = ({ categories, subcategories, items, setPop
 
 
       {/* Adding Form */}
-      <div className="bg-white p-10 border border-gray-100 shadow-soft relative overflow-hidden group">
+      <div className="bg-white p-10 border border-gray-100 shadow-soft relative overflow-hidden group rounded-4xl">
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl group-hover:bg-primary/10 transition-colors pointer-events-none" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 mb-10">

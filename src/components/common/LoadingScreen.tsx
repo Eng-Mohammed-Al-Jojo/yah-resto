@@ -38,7 +38,7 @@ export default function LoadingScreen({ visible, onExited }: Props) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.05, filter: "blur(10px)" }}
           transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
-          className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-white overflow-hidden"
+          className="fixed inset-0 z-9999 flex flex-col items-center justify-center bg-(--bg-main) overflow-hidden"
           dir={isRtl ? "rtl" : "ltr"}
         >
           {/* Ambient Glow: Radial Gradient */}

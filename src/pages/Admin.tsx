@@ -332,7 +332,7 @@ export default function Admin() {
 
   if (!authOk) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-white p-6 relative overflow-hidden">
+      <div className="min-h-screen flex items-center justify-center bg-(--bg-card)/50 p-6 relative overflow-hidden">
         {/* Abstract Background Shapes */}
         <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-30 pointer-events-none">
           <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary-100 rounded-full blur-[120px]" />
@@ -342,7 +342,7 @@ export default function Admin() {
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="w-full max-w-md bg-white p-10 rounded-[2.5rem] shadow-premium border border-gray-100 relative z-10"
+          className="w-full max-w-md bg-(--bg-card)/50 p-10 rounded-[2.5rem] shadow-premium border border-gray-100 relative z-10"
         >
           <div className="flex flex-col items-center mb-10">
             <div className="w-24 h-24 bg-white p-3 rounded-3xl shadow-soft mb-8 border border-gray-50 flex items-center justify-center">
@@ -426,7 +426,7 @@ export default function Admin() {
 
   // ================= ADMIN PANEL UI =================
   return (
-    <div className="min-h-screen bg-(--bg-main) flex justify-center py-6 sm:py-10 px-4 md:px-10">
+    <div className="min-h-screen bg-(--bg-card)/50 flex justify-center py-6 sm:py-10 px-4 md:px-10">
       <div className="w-full max-w-6xl space-y-8 sm:space-y-10">
         {/* Modern Header */}
         <header className="bg-white border border-gray-100 p-8 rounded-[2.5rem] flex flex-col md:flex-row justify-between items-center gap-8 shadow-premium">
