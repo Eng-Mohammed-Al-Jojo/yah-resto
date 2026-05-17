@@ -116,8 +116,7 @@ const Popup: React.FC<Props> = ({
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
-          className="relative w-full max-w-md bg-white rounded-[3rem] border border-gray-100 shadow-premium overflow-hidden z-10"
-        >
+          className="relative w-full max-w-md max-h-[90vh] overflow-y-auto bg-white rounded-[3rem] border border-gray-100 shadow-premium z-10"        >
           {/* Close Button */}
           <button
             onClick={closePopup}

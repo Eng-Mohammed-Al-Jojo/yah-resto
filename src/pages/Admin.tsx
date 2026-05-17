@@ -426,10 +426,10 @@ export default function Admin() {
 
   // ================= ADMIN PANEL UI =================
   return (
-    <div className="min-h-screen bg-(--bg-card)/50 flex justify-center py-6 sm:py-10 px-4 md:px-10">
+    <div className="min-h-screen bg-gray-100 flex justify-center py-6 sm:py-10 px-4 md:px-10">
       <div className="w-full max-w-6xl space-y-8 sm:space-y-10">
         {/* Modern Header */}
-        <header className="bg-white border border-gray-100 p-8 rounded-[2.5rem] flex flex-col md:flex-row justify-between items-center gap-8 shadow-premium">
+        <header className="bg-(--bg-card) border border-gray-100 p-8 rounded-[2.5rem] flex flex-col md:flex-row justify-between items-center gap-8 shadow-premium">
           <div className="flex items-center gap-6">
             <div className="w-16 h-16 bg-white p-2 rounded-2xl shadow-soft border border-gray-50 flex items-center justify-center">
               <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" onError={(e) => e.currentTarget.src = '/hamada.png'} />

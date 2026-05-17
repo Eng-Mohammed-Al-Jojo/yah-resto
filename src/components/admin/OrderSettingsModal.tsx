@@ -35,7 +35,7 @@ function ServiceCheckbox({ title, enabled, onToggle, value, setValue, disabled, 
     return (
         <motion.div
             whileHover={!disabled ? { y: -4, boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1)" } : {}}
-            className={`relative p-8 rounded-4xl border transition-all duration-500 group overflow-hidden ${enabled
+            className={`relative p-6 rounded-4xl border transition-all duration-500 group overflow-hidden ${enabled
                 ? "bg-white border-primary/20 shadow-premium"
                 : "bg-gray-50 border-gray-100 opacity-70 hover:opacity-100"
                 } ${disabled ? "opacity-40 grayscale pointer-events-none" : ""}`}
@@ -182,7 +182,7 @@ export default function OrderSettingsModal({ setShowOrderSettings, orderSettings
     };
 
     return (
-        <div className="fixed inset-0 z-100 flex items-center justify-center p-6">
+        <div className="fixed inset-0 z-100 flex items-center justify-center p-2">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setShowOrderSettings(false)} className="absolute inset-0 bg-gray-900/40 backdrop-blur-sm" />
 
             <motion.div
@@ -192,7 +192,7 @@ export default function OrderSettingsModal({ setShowOrderSettings, orderSettings
                 className="relative bg-white w-full max-w-2xl rounded-[3rem] border border-gray-100 shadow-premium flex flex-col max-h-[90vh] overflow-hidden z-10"
             >
                 {/* Header */}
-                <div className="p-10 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
+                <div className="p-4 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
                     <div className="flex items-center gap-6">
                         <div className="w-16 h-16 rounded-3xl bg-primary text-white flex items-center justify-center text-3xl shadow-xl shadow-primary/20">
                             <FiSettings />
@@ -211,7 +211,7 @@ export default function OrderSettingsModal({ setShowOrderSettings, orderSettings
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 overflow-y-auto p-10 space-y-10 custom-scrollbar">
+                <div className="flex-1 overflow-y-auto p-2 space-y-10 custom-scrollbar">
                     {/* Order Module Toggle */}
                     <div className="p-8 rounded-4xl bg-primary/5 border border-primary/10 flex items-center justify-between shadow-sm">
                         <div className="flex items-center gap-5">
@@ -337,22 +337,22 @@ export default function OrderSettingsModal({ setShowOrderSettings, orderSettings
                                 </div>
                                 <div className="relative group">
                                     <FaWhatsapp className={`absolute ${isRtl ? 'right-6' : 'left-6'} top-1/2 -translate-y-1/2 text-gray-300 transition-colors group-focus-within:text-emerald-500`} />
-                                    <input placeholder={t('admin.contact_whatsapp')} value={footer.whatsapp} onChange={(e) => setFooter({ ...footer, whatsapp: e.target.value })} className={`${inputClass} ${isRtl ? 'pr-16' : 'pl-16'} bg-white! shadow-soft`} />
+                                    <input placeholder={t('admin.whatsapp_placeholder')} value={footer.whatsapp} onChange={(e) => setFooter({ ...footer, whatsapp: e.target.value })} className={`${inputClass} ${isRtl ? 'pr-16' : 'pl-16'} bg-white! shadow-soft`} />
                                 </div>
                             </div>
 
-                            <div className="grid grid-cols-3 gap-6">
+                            <div className="grid grid-cols-1 gap-6">
                                 <div className="relative group">
                                     <FaFacebook className={`absolute ${isRtl ? 'right-5' : 'left-5'} top-1/2 -translate-y-1/2 text-gray-300 transition-colors group-focus-within:text-blue-600`} />
-                                    <input placeholder="FB" value={footer.facebook} onChange={(e) => setFooter({ ...footer, facebook: e.target.value })} className={`${inputClass} ${isRtl ? 'pr-14 pl-2' : 'pl-14 pr-2'} bg-white! shadow-soft text-xs`} />
+                                    <input placeholder="facebook" value={footer.facebook} onChange={(e) => setFooter({ ...footer, facebook: e.target.value })} className={`${inputClass} ${isRtl ? 'pr-14 pl-2' : 'pl-14 pr-2'} bg-white! shadow-soft text-xs`} />
                                 </div>
                                 <div className="relative group">
                                     <FaInstagram className={`absolute ${isRtl ? 'right-5' : 'left-5'} top-1/2 -translate-y-1/2 text-gray-300 transition-colors group-focus-within:text-pink-500`} />
-                                    <input placeholder="IG" value={footer.instagram} onChange={(e) => setFooter({ ...footer, instagram: e.target.value })} className={`${inputClass} ${isRtl ? 'pr-14 pl-2' : 'pl-14 pr-2'} bg-white! shadow-soft text-xs`} />
+                                    <input placeholder="instagram" value={footer.instagram} onChange={(e) => setFooter({ ...footer, instagram: e.target.value })} className={`${inputClass} ${isRtl ? 'pr-14 pl-2' : 'pl-14 pr-2'} bg-white! shadow-soft text-xs`} />
                                 </div>
                                 <div className="relative group">
                                     <FaTiktok className={`absolute ${isRtl ? 'right-5' : 'left-5'} top-1/2 -translate-y-1/2 text-gray-300 transition-colors group-focus-within:text-black`} />
-                                    <input placeholder="TT" value={footer.tiktok} onChange={(e) => setFooter({ ...footer, tiktok: e.target.value })} className={`${inputClass} ${isRtl ? 'pr-14 pl-2' : 'pl-14 pr-2'} bg-white! shadow-soft text-xs`} />
+                                    <input placeholder="tiktok" value={footer.tiktok} onChange={(e) => setFooter({ ...footer, tiktok: e.target.value })} className={`${inputClass} ${isRtl ? 'pr-14 pl-2' : 'pl-14 pr-2'} bg-white! shadow-soft text-xs`} />
                                 </div>
                             </div>
                         </div>

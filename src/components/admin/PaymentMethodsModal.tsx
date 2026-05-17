@@ -103,7 +103,7 @@ export default function PaymentMethodsModal({ isOpen, onClose }: Props) {
         <>
             <AnimatePresence>
                 {isOpen && (
-                    <div className="fixed inset-0 z-100 flex items-center justify-center p-6">
+                    <div className="fixed inset-0 z-100 flex items-center justify-center p-2">
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -119,9 +119,9 @@ export default function PaymentMethodsModal({ isOpen, onClose }: Props) {
                             className="relative w-full max-w-5xl bg-white rounded-[3rem] border border-gray-100 shadow-premium overflow-hidden z-10 flex flex-col max-h-[90vh]"
                         >
                             {/* Header */}
-                            <div className="p-8 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
+                            <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
                                 <div className="flex items-center gap-5">
-                                    <div className="p-4 bg-primary text-white rounded-2xl shadow-lg shadow-primary/20">
+                                    <div className="p-6 bg-primary text-white rounded-2xl shadow-lg shadow-primary/20">
                                         <FiSettings size={24} />
                                     </div>
                                     <div>
@@ -135,7 +135,7 @@ export default function PaymentMethodsModal({ isOpen, onClose }: Props) {
                             </div>
 
                             {/* Content */}
-                            <div className="flex-1 overflow-y-auto p-10 custom-scrollbar">
+                            <div className="flex-1 overflow-y-auto p-2 custom-scrollbar">
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                                     {/* Methods List */}
                                     <div className="space-y-6">

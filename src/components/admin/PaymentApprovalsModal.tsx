@@ -21,7 +21,7 @@ export default function PaymentApprovalsModal({ isOpen, onClose, payments, onApp
     return (
         <AnimatePresence>
             {isOpen && (
-                <div className="fixed inset-0 z-100 flex items-center justify-center p-6">
+                <div className="fixed inset-0 z-100 flex items-center justify-center p-2">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -37,9 +37,9 @@ export default function PaymentApprovalsModal({ isOpen, onClose, payments, onApp
                         className="relative w-full max-w-4xl bg-white rounded-[3rem] border border-gray-100 shadow-premium overflow-hidden z-10 flex flex-col max-h-[85vh]"
                     >
                         {/* Header */}
-                        <div className="p-8 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
+                        <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-gray-50/50">
                             <div className="flex items-center gap-5">
-                                <div className="p-4 bg-amber-500 text-white rounded-2xl shadow-lg shadow-amber-500/20">
+                                <div className="p-2 bg-amber-500 text-white rounded-2xl shadow-lg shadow-amber-500/20">
                                     <FiDollarSign size={24} />
                                 </div>
                                 <div>
@@ -53,7 +53,7 @@ export default function PaymentApprovalsModal({ isOpen, onClose, payments, onApp
                         </div>
 
                         {/* Content */}
-                        <div className="flex-1 overflow-y-auto p-10 custom-scrollbar space-y-12">
+                        <div className="flex-1 overflow-y-auto p-4 custom-scrollbar space-y-12">
 
                             {/* Pending Section */}
                             <section className="space-y-6">
