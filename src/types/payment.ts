@@ -7,6 +7,8 @@ export interface PaymentMethodField {
 }
 
 export interface PaymentMethod {
+    isEnabled: unknown;
+    paymentFields: never[];
     id: string;
     type: "cash" | "bank";
     name: string;
@@ -40,7 +42,7 @@ export interface PaymentRecord {
     createdAt: number;
     updatedAt: number;
     receiptUrl?: string;
-    
+
     /** Approval */
     approvedAt?: number;
 }

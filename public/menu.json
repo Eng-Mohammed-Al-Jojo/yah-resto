@@ -1,0 +1,446 @@
+{
+  "categories": {
+    "-OrvaNK2QbmsmmknZ-ax": {
+      "createdAt": 1778042635588,
+      "name": "الشاورما",
+      "nameAr": "الشاورما",
+      "order": 0,
+      "visible": true
+    },
+    "-OrvqsAipg-GWqe4XhN9": {
+      "createdAt": 1778046960358,
+      "name": "الكريب",
+      "nameAr": "الكريب",
+      "order": 1,
+      "visible": true
+    },
+    "-Orvqu_EReVS4ZwJQodR": {
+      "createdAt": 1778046970183,
+      "name": "البروست",
+      "nameAr": "البروست",
+      "order": 2,
+      "visible": true
+    },
+    "-OrvqwQUW1ydfpztlCVt": {
+      "createdAt": 1778046977751,
+      "name": "السلطات",
+      "nameAr": "السلطات",
+      "order": 4,
+      "visible": true
+    },
+    "-Orvr-kMyJ_f0LFc1WaJ": {
+      "createdAt": 1778046995471,
+      "name": "المشروبات",
+      "nameAr": "المشروبات",
+      "order": 5,
+      "visible": true
+    },
+    "-OsBTkdGKHGY-xsyvZhx": {
+      "createdAt": 1778325847975,
+      "name": "الوجبات الغربية",
+      "nameAr": "الوجبات الغربية",
+      "order": 3,
+      "visible": true
+    }
+  },
+  "subcategories": {
+    "-Orvqjoc29SHQu0CvsTI": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778046926111,
+      "image": "",
+      "nameAr": "الفراشيح",
+      "order": 0,
+      "visible": true
+    },
+    "-Orvqm165NhGhlvAEt9X": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778046935167,
+      "image": "",
+      "nameAr": "الوجبات",
+      "order": 1,
+      "visible": true
+    }
+  },
+  "items": {
+    "-OrvaRhuLSwrIi5R1cs6": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778042653563,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "فرشوحة عادي",
+      "order": 1,
+      "price": "20",
+      "priceTw": "",
+      "star": false,
+      "subcategoryId": "-Orvqjoc29SHQu0CvsTI",
+      "visible": true
+    },
+    "-OrvrBJEAWpKEc5MbPoY": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047042823,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "فرشوحة دبل عادي",
+      "order": 0,
+      "price": "25",
+      "star": false,
+      "subcategoryId": "-Orvqjoc29SHQu0CvsTI",
+      "visible": true
+    },
+    "-OrvrGNMpDGQc1j8-g-u": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047063567,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "فرشوحة دبل شاورما",
+      "order": 2,
+      "price": "30",
+      "star": false,
+      "subcategoryId": "-Orvqjoc29SHQu0CvsTI",
+      "visible": true
+    },
+    "-OrvrJqrIsxtnjKbrAWu": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047077807,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "فرشوحة دبل دبل",
+      "order": 3,
+      "price": "35",
+      "star": false,
+      "subcategoryId": "-Orvqjoc29SHQu0CvsTI",
+      "visible": true
+    },
+    "-OrvrPqjXWDAXoBapNJh": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047102375,
+      "image": "فرشوحة كرسبي.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "فرشوحة كرسبي",
+      "order": 4,
+      "price": "35",
+      "star": false,
+      "subcategoryId": "-Orvqjoc29SHQu0CvsTI",
+      "visible": true
+    },
+    "-OrvrW6MgAEd8SFepcdN": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047128015,
+      "image": "سوري شاورما.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "سوري شاورما",
+      "order": 5,
+      "price": "40",
+      "star": false,
+      "subcategoryId": "-Orvqm165NhGhlvAEt9X",
+      "visible": true
+    },
+    "-Orvr_Sjm353Ij0FMJZx": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047145831,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "أساور عربية",
+      "order": 6,
+      "price": "40",
+      "star": false,
+      "subcategoryId": "-Orvqm165NhGhlvAEt9X",
+      "visible": true
+    },
+    "-Orvrf6jU9ysbFJpNy3X": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047168999,
+      "image": "صفيحة شاورما.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "صفيحة شاورما",
+      "order": 7,
+      "price": "40",
+      "star": false,
+      "subcategoryId": "-Orvqm165NhGhlvAEt9X",
+      "visible": true
+    },
+    "-OrvriwbXG2YJNmhz5z-": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047184671,
+      "image": "المجنونة.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "مجنونة",
+      "order": 8,
+      "price": "40",
+      "star": false,
+      "subcategoryId": "-Orvqm165NhGhlvAEt9X",
+      "visible": true
+    },
+    "-OrvrnzMNIo-UXL11YDw": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047205327,
+      "image": "نابلسية.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "شاورما نابلسي",
+      "order": 9,
+      "price": "45",
+      "star": false,
+      "subcategoryId": "-Orvqm165NhGhlvAEt9X",
+      "visible": true
+    },
+    "-OrvrsScmGfB0opvZA22": {
+      "categoryId": "-OrvaNK2QbmsmmknZ-ax",
+      "createdAt": 1778047223648,
+      "image": "فطيرة ذهبية.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "فطيرة ذهبية",
+      "order": 10,
+      "price": "45",
+      "star": false,
+      "subcategoryId": "-Orvqm165NhGhlvAEt9X",
+      "visible": true
+    },
+    "-OrvryVkzORkWizZ4S1Q": {
+      "categoryId": "-OrvqsAipg-GWqe4XhN9",
+      "createdAt": 1778047248424,
+      "image": "كريب كونو.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "كريب الشاورما - كونو",
+      "order": 1,
+      "price": "40,45",
+      "star": false,
+      "visible": true
+    },
+    "-Orvs41NjXPAVjqrT5hv": {
+      "categoryId": "-OrvqsAipg-GWqe4XhN9",
+      "createdAt": 1778047275152,
+      "image": "كريب كرسبي.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "كريب كرسبي - كونو",
+      "order": 0,
+      "price": "50,55",
+      "star": false,
+      "visible": true
+    },
+    "-OrvsA67Bo473oRZpVHp": {
+      "categoryId": "-OrvqsAipg-GWqe4XhN9",
+      "createdAt": 1778047300032,
+      "image": "كريب مكس.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "كريب مكس - كونو",
+      "order": 2,
+      "price": "50,55",
+      "star": true,
+      "visible": true
+    },
+    "-OrvsG48nnz-ZTWDPn9R": {
+      "categoryId": "-OrvqsAipg-GWqe4XhN9",
+      "createdAt": 1778047324481,
+      "image": "كريب كونو.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "كريب وردة - كونو",
+      "order": 3,
+      "price": "70,80",
+      "star": true,
+      "visible": true
+    },
+    "-OrvsVL00kqoE09hjKZa": {
+      "categoryId": "-Orvqu_EReVS4ZwJQodR",
+      "createdAt": 1778047387001,
+      "image": "نصف دجاجة بروست.jpeg",
+      "ingredientsAr": "4 قطع - بطاطا - تومية - كولسلو - خبز",
+      "nameAr": "نصف دجاجة بروست",
+      "price": "40",
+      "star": false,
+      "visible": true
+    },
+    "-OrvsclXSoJE_xla68jm": {
+      "categoryId": "-Orvqu_EReVS4ZwJQodR",
+      "createdAt": 1778047421530,
+      "image": "logo.jpeg",
+      "ingredientsAr": "5 قطع - بطاطا - تومية - كولسلو - خبز",
+      "nameAr": "دبوس بروست",
+      "price": "40",
+      "star": false,
+      "visible": false
+    },
+    "-OrvshoWd1qTJVdy0J2H": {
+      "categoryId": "-Orvqu_EReVS4ZwJQodR",
+      "createdAt": 1778047442201,
+      "image": "بروست ستربس.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "قطع بروست ستربس",
+      "price": "50",
+      "star": false,
+      "visible": true
+    },
+    "-OrvsqhGdhhRbf6Ghb5R": {
+      "categoryId": "-OrvqwQUW1ydfpztlCVt",
+      "createdAt": 1778047478601,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "ذرة مايونيز",
+      "price": "10,15,20",
+      "star": false,
+      "visible": true
+    },
+    "-Orvsv7PhuCl29ZLQ5Vg": {
+      "categoryId": "-OrvqwQUW1ydfpztlCVt",
+      "createdAt": 1778047496722,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "سلطة تركية",
+      "price": "10,15,20",
+      "star": false,
+      "visible": true
+    },
+    "-Orvszd0atoRXRp-Pr6L": {
+      "categoryId": "-OrvqwQUW1ydfpztlCVt",
+      "createdAt": 1778047515193,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "سلطة ملفوف أحمر",
+      "price": "10,15,20",
+      "star": false,
+      "visible": true
+    },
+    "-Orvt2dtsHnHvsMw74Mp": {
+      "categoryId": "-OrvqwQUW1ydfpztlCVt",
+      "createdAt": 1778047531633,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "سلطة كولسلو",
+      "price": "10,15,20",
+      "star": false,
+      "visible": true
+    },
+    "-Orvt9HlF6vubICkFGKd": {
+      "categoryId": "-OrvqwQUW1ydfpztlCVt",
+      "createdAt": 1778047558825,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "صوص تومية",
+      "price": "10,15,20",
+      "star": false,
+      "visible": true
+    },
+    "-OrvtDAtt3ET8qHdnVRc": {
+      "categoryId": "-OrvqwQUW1ydfpztlCVt",
+      "createdAt": 1778047574769,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "صوص بيكانتي",
+      "price": "10,15,20",
+      "star": false,
+      "visible": true
+    },
+    "-OrvtHVnEifI7qyuVmjJ": {
+      "categoryId": "-OrvqwQUW1ydfpztlCVt",
+      "createdAt": 1778047592491,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "بطاطا",
+      "price": "5,10,15",
+      "star": false,
+      "visible": true
+    },
+    "-OrvteRPc--9hTtoNE8x": {
+      "categoryId": "-Orvr-kMyJ_f0LFc1WaJ",
+      "createdAt": 1778047690514,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "مياه معدنية",
+      "price": "3",
+      "star": false,
+      "visible": true
+    },
+    "-OrvtitQIDplALC7oh8y": {
+      "categoryId": "-Orvr-kMyJ_f0LFc1WaJ",
+      "createdAt": 1778047708755,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "مشروب غازي",
+      "price": "5",
+      "star": false,
+      "visible": true
+    },
+    "-Osp8mtpCZ6oBFGL0dN8": {
+      "categoryId": "-OsBTkdGKHGY-xsyvZhx",
+      "createdAt": 1779008218805,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "تشكن برجر كرسبي ",
+      "price": "25",
+      "star": false,
+      "visible": true
+    },
+    "-Osp8t0_R-8iGyRPNj30": {
+      "categoryId": "-OsBTkdGKHGY-xsyvZhx",
+      "createdAt": 1779008243877,
+      "image": "تشيكن بيتزا.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "تشكن بيتزا",
+      "price": "30",
+      "star": false,
+      "visible": true
+    },
+    "-Osp8zPxyP3-PUztnVOq": {
+      "categoryId": "-OsBTkdGKHGY-xsyvZhx",
+      "createdAt": 1779008270077,
+      "image": "ألاكينج.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "ألاكنج",
+      "price": "30",
+      "star": false,
+      "visible": true
+    },
+    "-Osp92gCl_xyZZJ2UMGf": {
+      "categoryId": "-OsBTkdGKHGY-xsyvZhx",
+      "createdAt": 1779008287565,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "دجاج بالجبنة",
+      "price": "35",
+      "star": false,
+      "visible": true
+    },
+    "-Osp99bCJwhMcjmTkTIi": {
+      "categoryId": "-OsBTkdGKHGY-xsyvZhx",
+      "createdAt": 1779008315917,
+      "image": "logo.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "دجاج بالكاري",
+      "price": "35",
+      "star": false,
+      "visible": true
+    },
+    "-Osp9F0Zd-JReuIT6NaE": {
+      "categoryId": "-OsBTkdGKHGY-xsyvZhx",
+      "createdAt": 1779008338084,
+      "image": "فطيرة ذهبية.jpeg",
+      "ingredientsAr": "",
+      "nameAr": "فطيرة ملكية ",
+      "price": "45",
+      "star": false,
+      "visible": true
+    }
+  },
+  "settings": {
+    "complaintsWhatsapp": "972592106140",
+    "footerInfo": {
+      "address": "النصيرات- الشارع العام - مقابل مول أبو دلال",
+      "facebook": "https://www.facebook.com/shawermayouseff",
+      "instagram": "https://www.instagram.com/shawerma_youseff/?hl=ar",
+      "phone": "",
+      "tiktok": "https://www.tiktok.com/@shawerma_youseff?_r=1&_t=ZS-96UUPtHFiDw",
+      "whatsapp": "972592106140"
+    },
+    "orderMode": "whatsapp",
+    "orderSettings": {
+      "inPhone": "972592106140",
+      "inRestaurant": true,
+      "outPhone": "972592106140",
+      "takeaway": true
+    },
+    "orderSystem": true
+  },
+  "meta": {
+    "version": "1.0",
+    "exportedAt": 1779204284557
+  }
+}

@@ -12,12 +12,20 @@ import { useState, useEffect } from "react";
 import { ref, onValue } from "firebase/database";
 import { db } from "../../firebase";
 import { useTranslation } from "react-i18next";
+import PaymentModal from "./PaymentModal";
+import type { PaymentMethod } from "../../types/payment";
+import { FiCreditCard } from "react-icons/fi";
+import { PaymentService } from "../../services/paymentService";
 
 const LOCAL_STORAGE_KEY = "footerInfo";
 
 export default function Footer() {
 
   const { t } = useTranslation();
+
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
+  const [paymentMethods, setPaymentMethods] = useState<PaymentMethod[]>([]);
+  const [isPaymentLoading, setIsPaymentLoading] = useState(true);
 
   const [footer, setFooter] = useState({
     address: "",
@@ -45,8 +53,14 @@ export default function Footer() {
       }
     });
 
+    const unsubMethods = PaymentService.listenToPaymentMethods((methods) => {
+      setPaymentMethods(methods);
+      setIsPaymentLoading(false);
+    });
+
     return () => {
       unsubFooter();
+      unsubMethods();
     };
   }, []);
 
@@ -92,7 +106,15 @@ export default function Footer() {
             </a>
           ))}
         </div>
-
+        <button
+          onClick={() => setIsPaymentModalOpen(true)}
+          className="flex items-center gap-2 text-primary hover:text-secondary transition-colors cursor-pointer group"
+        >
+          <div className="p-1.5 bg-primary/10 rounded-lg group-hover:bg-primary group-hover:text-white transition-all shadow-sm">
+            <FiCreditCard size={14} />
+          </div>
+          <span className="text-xs uppercase tracking-widest font-black">طرق الدفع</span>
+        </button>
 
 
         {/* Developer Signature */}
@@ -106,6 +128,14 @@ export default function Footer() {
           </a>
           <p className="text-[10px] text-(--menu-text-muted) font-bold">© {new Date().getFullYear()} {t('footer.rights_reserved')}</p>
         </div>
+
+
+        <PaymentModal
+          isOpen={isPaymentModalOpen}
+          onClose={() => setIsPaymentModalOpen(false)}
+          methods={paymentMethods}
+          isLoading={isPaymentLoading}
+        />
       </div>
     </footer>
   );
